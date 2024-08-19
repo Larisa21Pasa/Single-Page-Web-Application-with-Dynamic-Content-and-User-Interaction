@@ -1,0 +1,36 @@
+
+<main id="continut" class="parallax">
+	<header>
+		<h1>Listă cumpărături</h1>
+	</header>
+	<section>
+		<article>
+			<div class="lista_container">
+			<form>
+				<label>Nume:</label>
+				<input type="text" name="nume"><br><br>
+				<label>Cantitate:</label>
+				<input type="text" name="cantitate"><br><br>
+				
+				<label>Modalitate de stocare:</label>
+					<select name="modalitate-stocare">
+					<option value="web-storage" selected>Web Storage</option>
+					<option value="indexed-db">IndexedDB</option>
+					</select>
+		
+				<input type="button" value="Adaugă" onclick="Anunta()" >
+			</form>
+				<table id="shopping-list">
+					<thead>
+					  <tr>
+						<th>Product</th>
+						<th>Quantity</th>
+					  </tr>
+					</thead>
+					<tbody></tbody>
+				  </table>
+			
+		</div>
+		</article>
+	</section>
+</main>

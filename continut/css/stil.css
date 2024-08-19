@@ -1,0 +1,622 @@
+                          /* ALL PAGES CSS */
+
+ /* NEST NAVIGATION MENU */
+
+ 
+ nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+.topnav {
+  overflow: hidden;
+  background-image:  linear-gradient(#9e5432, rgb(221, 168, 98));
+  width: 100%;
+}
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Pseudo-class */
+  .topnav a:hover {
+    background-image:  linear-gradient(#bb6841, rgb(240, 206, 155));
+    color: black;
+  }
+
+  .topnav a.active {
+    color: white;
+  }
+    /*END  NEST NAVIGATION MENU */
+
+
+/* Style -> all content */
+* {
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+/* Style -> body */
+  body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Style  -> header */
+  header {
+    background-color: #d4784d;
+    opacity: 0.8;
+    padding: 3px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+  }
+  h1 {
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(56, 41, 8), 0 0 5px rgb(221, 171, 95); 
+  }
+  h2{
+    text-align: center;
+
+  }
+  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+/*Presudo-element*/
+  p::first-line {
+    color: black;
+  }
+
+  p{
+    text-align: center;
+  }
+
+/* Style container for flexboxes -> section*/
+  section {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  
+/* Style the content -> article */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+
+  .parallax {
+    /* The image used */
+    background-image: url("imagini/background_cake.png");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+/* Style the footer */
+  footer {
+    background-color: #d4784d;
+    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+    color: white;
+ 
+  }
+  
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+                          /* STOP ALL PAGES CSS */
+
+                        /*ACASA CSS*/
+/* Style the main section */
+.acasa-style {
+  font-family: Arial, sans-serif;
+}
+
+.acasa-style .description_container
+{
+  
+  background-color: #f8f4ee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}
+
+.acasa-style .description_container:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}
+
+.list-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+li:before {
+  content: "• ";
+  color: red;
+  margin-right: 5px;
+}
+
+                    
+                         /*STOP ACASA CSS*/
+
+
+                          /* DESPRE CSS */
+/* COMUNE */
+.prajituri_iframe
+{
+    width: 100%;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+
+}
+
+.center-image:hover {
+  transform: rotate(360deg);
+}
+
+.center-paragraph {
+  text-align: center;
+}
+  
+#borderimage {
+  color: white;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}
+
+h1 {
+  color: white;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}
+
+/* END COMUNE */
+
+/* ALBA CA ZAPADA*/
+#alba_ca_zapada {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  
+}
+
+#alba_ca_zapada td,
+#alba_ca_zapada th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#alba_ca_zapada tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#alba_ca_zapada tr:hover {
+  background-color: #ddd;
+}
+
+#alba_ca_zapada th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:rgb(230, 185, 103);
+  color: white;
+}
+/* END ALBA CA ZAPADA*/
+
+/* FANTA */
+#fanta {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#fanta td,
+#fanta th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#fanta tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#fanta tr:hover {
+  background-color: #ddd;
+}
+
+#fanta th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:rgb(230, 185, 103);
+  color: white;
+}
+/* END  FANTA */
+
+/* CONTAINERE  PRAJITURI */
+/*ALBA CA ZAPADA + FANTA*/
+.acz_box, .fanta_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgb(224, 184, 123);
+}
+
+.acz_cofetarii, .fanta_cofetarii
+{
+text-align: center;
+}
+/* END CONTAINERE  PRAJITURI */
+                          /* STOP DESPRE CSS */
+
+
+                          /* INVAT CSS */
+
+/* LABORATOR 5 -> adaugare css pentru sectiunea aside*/
+aside {
+  background-color: #f8f4ee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+  /* add box shadow */
+  padding: 10px;
+  margin: 0 auto;
+  /* center the aside element */
+  max-width: 600px;
+  /* set maximum width */
+}
+
+aside:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}    
+
+aside a {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+aside a:hover {
+  color: #f44336;
+  font-size:20px;
+}
+
+
+:target {
+  background-color: #f1f8b5;
+  width: 100%;
+}
+
+/* Style the canvas */
+#myCanvas {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+div form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+div form label {
+  margin-right: 10px;
+}
+
+div form input[type="text"] {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(198, 192, 200);
+  font-size: 16px;
+}
+
+div form input[type="color"] {
+  margin-right: 10px;
+}
+
+div form button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(198, 192, 200);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+   
+/* ALINIERE ITEMI DIN SECTIUNI*/
+
+.sectiunea1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f4ee;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}
+.sectiunea1:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}
+.sectiunea2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f4ee;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}
+.sectiunea2:hover{
+  background-color: #faeede;
+
+}
+/*.sectiunea3:hover impossible because affect canvas*/
+.sectiunea3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f4ee;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}
+
+.sectiunea3:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}
+
+#date-time,#current_url ,#current-location ,#current-browser ,#version-browser ,#current-os 
+{
+  color: red;
+}
+
+h1 {
+  color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px rgb(98, 13, 119), 0 0 5px rgb(62, 6, 77); 
+}
+
+                          /* STOP INVAT CSS */
+
+
+                          /* INREGISTRARE CSS */
+
+/*FORM*/
+input[type=text],input[type=password],
+  input[type=email],input[type=tel],
+  input[type=color],input[type=date],
+  input[type=range],input[type=url],
+  input[type=time],textarea    
+  select,#idmancare,#idsex {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #be5b2d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #884b2f;
+    transform: scale(1.1); /* increases the size of the container by 10% */
+    transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-item {
+    background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+    width: 45%;
+  }
+  .form-item:hover{
+    background-color: #faeede;
+    transform: scale(1.1); /* increases the size of the container by 10% */
+    transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+  }
+  
+  .form-submit {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+
+
+                          /* STOP INREGISTRARE CSS */
+
+                          /*  VIDEO CSS */
+.flex-container .flex-container_item{
+  background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}   
+.flex-container .flex-container_item:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}               
+                          /* STOP VIDEO CSS */
+
+                          /*  DESEN CSS */
+.draws_container{
+  background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}  
+.draws_container:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}                         
+                          /*  STOP DESEN CSS */
+
+                           /*  PERSOANE CSS */  
+.persoane_container{
+  display:block;
+  text-align:center;
+  border : 2px solid black;
+  background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}  
+.persoane_container:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}
+                
+                           /*  STOP PERSOANE CSS */   
+
+                            /*  VERIFICA CSS */  
+.verifica_container{
+  display:block;
+  text-align:center;
+  border : 2px solid black;
+  background-color: #f8f4ee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(240, 206, 155);
+}  
+.verifica_container:hover{
+  background-color: #faeede;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}
+
+.verifica_container .submit_button {
+  width: 100%;
+  background-color: #be5b2d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.verifica_container .submit_button:hover {
+  background-color: #884b2f;
+  transform: scale(1.1); /* increases the size of the container by 10% */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+}
+                           /*  STOP  VERIFICA CSS */  
+
+                            /*  CUMPARATURI CSS */
+  .lista_container{
+    display:block;
+    text-align:center;
+    border : 2px solid black;
+    background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+  }  
+  .lista_container:hover{
+    background-color: #faeede;
+    transform: scale(1.1); /* increases the size of the container by 10% */
+    transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+  }                          
+                            /*  STOP CUMPARATURI CSS */                                                                                                  

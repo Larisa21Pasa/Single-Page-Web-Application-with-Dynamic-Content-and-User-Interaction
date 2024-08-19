@@ -1,0 +1,89 @@
+<main id="continut" class="parallax">
+    <header>
+        <h1>Inregistreaza</h1>
+    </header>
+    <section>
+        <article>
+            <form action="index.html" action ="POST">
+                <div class="form-container">
+                    <div class="form-item">
+                        <!-- first form div content here -->
+                        <label for="ulizator">Nume utilizator:</label>
+                        <input type="text" id="id_utilizator" name="utilizator" placeholder="Popescu"><br />
+
+                        <label for="parola">Parola:</label>
+                        <input type="password" id="id_password" name="password" placeholder="parola" minlength="8"
+                            required><br />
+                        <label for="email">Email:</label>
+                        <input type="email" id="id_email" name="email"><br />
+
+                        <label for="telefon">Telefon:</label>
+                        <input type="tel" id="id_phone" name="phone" placeholder="aaa-aaa-aaaa"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br />
+
+                        <label
+                            style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"
+                            for="descriere">Descriere:</label>
+                        <input type="text" id="iddescriere" name="iddescriere" placeholder="idei, ganduri"><br />
+
+                    </div>
+                    <div class="form-item">
+                        <!-- second form div content here -->
+                        <label for="sex">Sex:</label>
+                        <select name="idsex" id="idsex">
+                            <option value="feminin">Feminin</option>
+                            <option value="masculin">Masculin</option>
+                        </select>
+                        <br />
+
+                        <label for="mancare">Mancarea preferata:</label>
+                        <select name="mancare" id="idmancare">
+                            <option value="italiana">Italiana</option>
+                            <option value="turceasca">Turceasca</option>
+                            <option value="greseasca">Greseasca</option>
+                            <option value="chinezeasca">Chinezeasca</option>
+                            <option value="romaneasca">Romaneasca</option>
+                        </select>
+                        <br />
+
+                        <label for="culoarefavorita">Culoarea preferata:</label>
+                        <input type="color" id="idculoarefavorita" name="culoarefavorita" value="#ff0000">
+                        <br />
+
+
+                        <label for="datanastere">Data de nastere:</label>
+                        <input type="date" id="iddatanastere" name="datanastere">
+                        <br />
+
+
+                        <label for="oranastere">Select a time:</label>
+                        <input type="time" id="idoranastere" name="oranastere">
+                        <br />
+
+                        <label for="varsta">Varsta:</label>
+                        <input type="range" id="idvarsta" name="varsta" min="0" max="100">
+                        <br />
+
+                        <label for="paginapersonala">Adresa paginii personale:</label>
+                        <input type="url" id="idpaginapersonala" name="paginapersonala">
+                        <br />
+
+                        <label for="descrierepersonala">Descrierea personala:</label> <br />
+                        <textarea name="descrierepersonala" placeholder="..."></textarea>
+
+
+                    </div>
+
+                </div>
+                <input type="checkbox" id="idacord" name="idacord" value="daacord">
+                <label for="acord"> Sunt de acord cu conditiile citite deja. </label><br />
+               
+                <button type="button" class="form-submit" onclick="inregistreazaUtilizator()">Inregistreaza</button>
+
+                <input class="form-submit" type="submit" value="Inregistreaza">
+
+            </form>
+        </article>
+
+    </section>
+</main>

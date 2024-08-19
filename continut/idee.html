@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inserare dinamica tabel</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Inserare dinamica tabel</h2>
+    <div>
+      <label for="rowPosition">Linie:</label>
+      <input type="text" id="rowPosition" />
+      <label for="columnPosition">Coloana:</label>
+      <input type="text" id="columnPosition" />
+      <label for="colorPicker">Culoare:</label>
+      <input type="color" id="colorPicker" />
+      <button onclick="insertRow()">Insereaza linie</button>
+      <button onclick="insertColumn()">Insereaza coloana</button>
+    </div>
+    <br />
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Coloana 0</th>
+          <th>Coloana 1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Exemplu</td>
+          <td>Exemplu</td>
+        </tr>
+        <tr>
+          <td>Exemplu</td>
+          <td>Exemplu</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      var columnHeaders = ["Coloana 1", "Coloana 2"];
+
+      function insertRow() {
+        // Get the table element and the position to insert the new row
+        var table = document.getElementById("myTable");
+        var rowPos = parseInt(document.getElementById("rowPosition").value);
+
+        // If row position is invalid, insert new row at the end of the table
+        if (rowPos < 0 || rowPos > table.rows.length) {
+          rowPos = table.rows.length;
+        }
+
+        // Create a new row element and insert it at the specified position
+        var newRow = table.insertRow(rowPos);
+
+        // Add cells with the appropriate text to the new row
+        for (var i = 0; i < table.rows[0].cells.length; i++) {
+          var newCell = newRow.insertCell(i);
+          newCell.innerHTML = "A" + (rowPos-1) + (i + 1);
+        }
+
+        // Change the background color of the cells in the new row
+        newRow.style.backgroundColor = document.getElementById("colorPicker").value;
+      }
+      function insertColumn() {
+  // Get the table element and the position to insert the new column
+  var table = document.getElementById("myTable");
+  var colPos = parseInt(document.getElementById("columnPosition").value);
+
+  // If column position is invalid, insert new column at the end of the table
+  if (colPos < 0 || colPos > table.rows[0].cells.length) {
+    colPos = table.rows[0].cells.length;
+  }
+
+  // Insert a new <th> element with the appropriate header text
+  var newHeader = table.rows[0].insertCell(colPos);
+  newHeader.innerHTML = "Coloana " + colPos ;
+
+  // Add a new cell to each row at the specified position
+  for (var i = 1; i < table.rows.length; i++) {
+    var newRow = table.rows[i];
+    var newCell = newRow.insertCell(colPos);
+    newCell.innerHTML = "A" + (i-1) + colPos;
+    // Move existing cells to the right
+    for (var j = newRow.cells.length - 1; j > colPos; j--) {
+      newRow.cells[j].innerHTML = newRow.cells[j - 1].innerHTML;
+    }
+    // Set the background color for the new cell
+    newCell.style.backgroundColor = document.getElementById("colorPicker").value;
+  }
+}
+
+</script>
+</body>
+</html>

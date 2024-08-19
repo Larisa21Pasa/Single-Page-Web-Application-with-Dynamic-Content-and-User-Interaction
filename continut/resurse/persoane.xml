@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana+)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+<!ELEMENT persoana (nume,prenume,varsta,adresa,cariera,educatie)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT cariera (job_actual,job_anterior,vechime_job_actual)>
+<!ELEMENT educatie (liceul,facultate,calificari)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT job_actual (#PCDATA)>
+<!ELEMENT job_anterior (#PCDATA)>
+<!ELEMENT vechime_job_actual (#PCDATA)>
+<!ELEMENT liceul (#PCDATA)>
+<!ELEMENT facultate (#PCDATA)>
+<!ELEMENT calificari (#PCDATA)>
+]>
+
+<persoane>
+    <persoana id="1">
+        <nume>Ionescu</nume>
+        <prenume>Ionel</prenume>
+        <varsta>23</varsta>
+
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>12</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>RO</tara>
+        </adresa>
+
+        <cariera>
+            <job_actual>Software Developer</job_actual>
+            <job_anterior>Internship</job_anterior>
+            <vechime_job_actual>13</vechime_job_actual>
+        </cariera>
+
+        <educatie>
+            <liceul>MI</liceul>
+            <facultate>AC</facultate>
+            <calificari>ECDL, Crucea Rosie</calificari>
+        </educatie>
+    </persoana>
+
+
+    <persoana id="2">
+        <nume>Antonescu</nume>
+        <prenume>Grigore</prenume>
+        <varsta>230</varsta>
+        
+        <adresa>
+            <strada>Aviatiei</strada>
+            <numar>13</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>RO</tara>
+        </adresa>
+
+        <cariera>
+            <job_actual>Software Developer Junior</job_actual>
+            <job_anterior>Internship</job_anterior>
+            <vechime_job_actual>20</vechime_job_actual>
+        </cariera>
+
+        <educatie>
+            <liceul>MI</liceul>
+            <facultate>AC</facultate>
+            <calificari>ECDL</calificari>
+        </educatie>
+    </persoana>
+
+
+    <persoana id="3">
+        <nume>Popa</nume>
+        <prenume>Ionel</prenume>
+        <varsta>18</varsta>
+        
+        <adresa>
+            <strada>Narciselor</strada>
+            <numar>22</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>RO</tara>
+        </adresa>
+
+        <cariera>
+            <job_actual>Internship</job_actual>
+            <job_anterior>Internship</job_anterior>
+            <vechime_job_actual>1</vechime_job_actual>
+        </cariera>
+
+        <educatie>
+            <liceul>MI</liceul>
+            <facultate>AC</facultate>
+            <calificari>Crucea Rosie</calificari>
+        </educatie>
+    </persoana>
+   
+
+</persoane>
